@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CohenComponent } from './cohen/cohen.component';
 import { DateCountPipe } from './date-count.pipe';
+import { CohenDetailsComponent } from './cohen-details/cohen-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CohenComponent,
-    DateCountPipe
+    DateCountPipe,
+    CohenDetailsComponent
   ],
   imports: [
     BrowserModule,

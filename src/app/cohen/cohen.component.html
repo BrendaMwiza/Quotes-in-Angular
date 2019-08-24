@@ -1,1 +1,12 @@
-
+<div>
+    
+    <ul>
+      <div *ngFor='let quote of quotes; let i = index'>
+        <li>{{quote.quote}} </li>
+        <button (click)='toggleName(i)'>About quote</button>
+        <app-cohen-details *ngIf='quote.showAuthor' [quotes]='quote'></app-cohen-details>
+      </div>
+    </ul>
+    
+</div>
+  

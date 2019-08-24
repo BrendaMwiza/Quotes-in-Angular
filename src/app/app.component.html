@@ -1,11 +1,13 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<h1>LOVELY AND HELPFUL QUOTES</h1>
-<ul>
-  <li *ngFor='let cohen of quotes'>
-    {{cohen.id}}
-    {{cohen.quote}}
-    {{cohen.author}}
-    {{cohen.completeDate|dateCount}}
-  </li>
-</ul>
-<router-outlet></router-outlet>
+<div>
+  <h1>LOVELY QUOTES</h1>
+  <ul>
+    <li *ngFor='let quote of Cohen'>
+      {{quote.id}}
+      {{quote.quote}}
+      {{quote.author}}
+    </li>
+  </ul>
+
+  <app-cohen></app-cohen>
+
+</div>
