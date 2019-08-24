@@ -9,7 +9,11 @@ import { Cohen } from '../cohen';
   export class CohenDetailsComponent implements OnInit {
 
   @Input() quotes: Cohen;
-  
+  @Output() isComplete = new EventEmitter<boolean>();
+
+  quoteRemove(complete:boolean){
+    this.isComplete.emit(complete);
+  }
 
   constructor() { }
 

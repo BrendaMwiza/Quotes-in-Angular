@@ -18,6 +18,16 @@ export class CohenComponent implements OnInit {
   toggleName(index){
     this.quotes[index].showAuthor = !this.quotes[index].showAuthor;
   }
+
+  removeQuote(isComplete, index){
+    if (isComplete) {
+      let remove = confirm(`do really want to delete this quote?`)
+
+      if (remove){
+        this.quotes.splice(index,1)
+      }
+    }
+  }
   
   constructor() { }
 
