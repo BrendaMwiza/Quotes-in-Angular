@@ -1,3 +1,19 @@
 .container{
-    background-color: url("https://us.123rf.com/450wm/sarsmis/sarsmis1601/sarsmis160100007/50908455-valentines-day-background-with-hearts-and-red-tulips.jpg?");
+    background-image: url("https://previews.123rf.com/images/fifoprod/fifoprod1502/fifoprod150200013/36439372-rustic-wooden-background-with-bright-red-hearts-and-free-text-space-as-a-greeting-for-valentine.jpg");
+
+    background-size: contain;
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+h1{
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+}
+button{
+    border-radius: 4px;
+    background-color: rgb(238, 214, 238);
+    border: 1px solid black;
 }
