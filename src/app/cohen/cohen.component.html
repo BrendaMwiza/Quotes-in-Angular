@@ -1,13 +1,18 @@
-<div>
-    
-    <ul>
-      <div *ngFor='let quote of quotes; let i = index'>
-        <li>{{quote.quote}} </li>
-        <button (click)='toggleName(i)'>About quote</button>
-        <app-cohen-details *ngIf='quote.showAuthor' [quotes]='quote' (isComplete) = 'removeQuote($event,i)'></app-cohen-details>
+<div class="container">
+    <div class="row">
+      <div class="col-md-10">
+          <h1>LOVELY QUOTES</h1>
+          <ul>
+            <div *ngFor='let quote of quotes; let i = index'>
+              <li>{{quote.quote}} </li>
+              <button (click)='toggleName(i)'>About quote</button><br>
+              <app-cohen-details *ngIf='quote.showAuthor' [quotes]='quote' (isComplete) = 'removeQuote($event,i)'></app-cohen-details><br>
+              <app-votes></app-votes>
+            </div>
+          </ul>
+          <app-cohen-form (addQuote)="addNewQuotes($event)"></app-cohen-form>
       </div>
-    </ul>
-    <app-cohen-form (addQuote)="addNewQuotes($event)"></app-cohen-form>
+    </div>
 
 </div>
   
