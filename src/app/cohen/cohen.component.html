@@ -7,7 +7,7 @@
         <app-cohen-details *ngIf='quote.showAuthor' [quotes]='quote' (isComplete) = 'removeQuote($event,i)'></app-cohen-details>
       </div>
     </ul>
-    <app-cohen-form></app-cohen-form>
+    <app-cohen-form (addQuote)="addNewQuotes($event)"></app-cohen-form>
 
 </div>
   
